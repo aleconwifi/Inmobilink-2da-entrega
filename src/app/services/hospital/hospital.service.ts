@@ -41,7 +41,7 @@ export class HospitalService {
     url += '?token=' + this._usuarioService.token;
 
     return this.http.delete( url )
-                .map( resp => swal('Hospital Borrado', 'Eliminado correctamente', 'success') );
+                .map( resp => swal('Inmueble Borrado', 'Eliminado correctamente', 'success') );
 
   }
 

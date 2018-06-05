@@ -54,7 +54,7 @@ export class HospitalitoService {
 
     return this.http.delete( url )
               .map( resp => {
-                swal( 'Hospital Borrado', 'Hospi borrado correctamente', 'success' );
+                swal( 'Inmueble Borrado', 'Inmueble borrado correctamente', 'success' );
                 return resp;
               });
 
@@ -71,7 +71,7 @@ export class HospitalitoService {
 
       return this.http.put( url, hospital )
                 .map( (resp: any) => {
-                  swal('Hospital Actualizado', hospital.nombre, 'success');
+                  swal('Inmueble Actualizado', hospital.nombre, 'success');
                   return resp.hospital;
 
                 });
@@ -81,7 +81,7 @@ export class HospitalitoService {
       url += '?token=' + this._usuarioService.token;
       return this.http.post( url, hospital )
               .map( (resp: any) => {
-                swal('Hospital Creado', hospital.nombre, 'success');
+                swal('Inmueble Creado', hospital.nombre, 'success');
                 return resp.hospital;
               });
     }

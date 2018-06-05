@@ -8,7 +8,7 @@
                     <form #f="ngForm" ngNativeValidate (ngSubmit)="guardarMedico(f)">
                         <div class="form-group">
                             <label>Nombre del cliente</label>
-                            <input [(ngModel)]="medico.nombre" name="nombre" type="text" class="form-control" placeholder="Nombre del médico" required>
+                            <input [(ngModel)]="medico.nombre" name="nombre" type="text" class="form-control" placeholder="Nombre del cliente" required>
                         </div>
 
                         <div class="form-group">
@@ -40,6 +40,7 @@
             <h4 class="box-title m-b-0">Inmueble</h4>
 
             <img [src]="hospital.img | imagen:'hospital'" class="rounded img-fluid">
+            <label> {{ hospital.descripcion }}</label>
         </div>
     </div>
 

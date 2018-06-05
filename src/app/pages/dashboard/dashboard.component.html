@@ -7,7 +7,14 @@
             <h5 class="card-title">{{hospital.nombre}}</h5>
             <p class="card-text">{{hospital.descripcion}}</p>
 
-            <button type="button" class="btn btn-outline-primary btn-block">Ver mas...</button>
+
+             <button [routerLink]="['/hospital3', hospital._id ]" class="btn btn-outline-primary btn-block">
+                                    <i class="mdi mdi-library-plus">Ver mas ...</i>
+                                  </button>
+
+                                  <button [routerLink]="['/hospital3', hospital._id ]" class="btn btn-outline-danger btn-block">
+                                    <i class="mdi mdi-heart"> Me Gusta </i>
+                                  </button>       
 
         </div>
 

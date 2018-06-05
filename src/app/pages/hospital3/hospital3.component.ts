@@ -7,11 +7,12 @@ import { ModalUploadService } from '../../components/modal-upload/modal-upload.s
 
 
 @Component({
-  selector: 'app-hospital2',
-  templateUrl: './hospital2.component.html',
+  selector: 'app-hospital3',
+  templateUrl: './hospital3.component.html',
   styles: []
 })
-export class Hospital2Component implements OnInit {
+export class Hospital3Component implements OnInit {
+
 
   hospital: Hospital = new Hospital('', '', '', '','','','');
 
@@ -74,7 +75,7 @@ export class Hospital2Component implements OnInit {
 
         this.hospital._id = hospital._id;
 
-         this.router.navigate(['/hospital2', hospital._id]);
+         this.router.navigate(['/hospital3', hospital._id]);
 
       });
 

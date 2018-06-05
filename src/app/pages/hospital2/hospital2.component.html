@@ -7,7 +7,7 @@
                 <div class="col-sm-12 col-xs-12">
                     <form #f="ngForm" ngNativeValidate (ngSubmit)="guardarHospital(f)">
                         <div class="form-group">
-                            <label>Ubicación del inmueble</label>
+                            <label>Nombre del inmueble</label>
                             <input [(ngModel)]="hospital.nombre" name="nombre" type="text" class="form-control" placeholder="Ubicación" required>
 
 
@@ -19,43 +19,21 @@
                         </div>
 
                         <div class="form-group">
-                            <label>Número de habitaciones</label>
-                            <input [(ngModel)]="hospital.descripcion" name="descripcion" type="text" class="form-control" placeholder="Habitaciones" required>
-                        </div>
-
-
-
-
-                        <div class="form-group">
-                            <label>Número de habitaciones</label>
-                            <input [(ngModel)]="hospital.descripcion" name="descripcion" type="text" class="form-control" placeholder="Habitaciones" required>
+                            <label>Precio del inmueble</label>
+                            <input [(ngModel)]="hospital.precio" name="precio" type="text" class="form-control" placeholder="Bs" required>
                         </div>
 
                         <div class="form-group">
-                            <label>Número de habitaciones</label>
-                            <input [(ngModel)]="hospital.descripcion" name="descripcion" type="text" class="form-control" placeholder="Habitaciones" required>
+                            <label>Tipo de Operacion Venta/Alquiler</label>
+                            <input [(ngModel)]="hospital.operacion" name="operacion" type="text" class="form-control" placeholder="Opera" required>
                         </div>
 
                         <div class="form-group">
-                            <label>Número de habitaciones</label>
-                            <input [(ngModel)]="hospital.descripcion" name="descripcion" type="text" class="form-control" placeholder="Habitaciones" required>
+                            <label>Estado del pais</label>
+                            <input [(ngModel)]="hospital.estado" name="estado" type="text" class="form-control" placeholder="Estado" required>
                         </div>
-
-                        <div class="form-group">
-                            <label>Número de habitaciones</label>
-                            <input [(ngModel)]="hospital.descripcion" name="descripcion" type="text" class="form-control" placeholder="Habitaciones" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Número de habitaciones</label>
-                            <input [(ngModel)]="hospital.descripcion" name="descripcion" type="text" class="form-control" placeholder="Habitaciones" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Número de habitaciones</label>
-                            <input [(ngModel)]="hospital.descripcion" name="descripcion" type="text" class="form-control" placeholder="Habitaciones" required>
-                        </div>
-
-
+                       
+                     
 
                         <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">
                         <i class="fa fa-save"></i>
@@ -69,19 +47,13 @@
     </div>
 
 
-    <div class="col-md-3">
-        <div class="card card-body">
-            <h4 class="box-title m-b-0">Hospital</h4>
+    
 
-            <img [src]="hospital.img | imagen:'hospital'" class="rounded img-fluid">
-        </div>
-    </div>
-
-    <div class="col-md-3" *ngIf="hospital._id">
+    <div class="col-md-4" *ngIf="hospital._id">
         <div class="card card-body">
             <h4 class="box-title m-b-0">Fotografía</h4>
 
-            <img (click)="cambiarFoto()" [src]="hospital.img | imagen:'medico'" class="img-circle img-fluid pointer">
+            <img (click)="cambiarFoto()" [src]="hospital.img | imagen:'hospital'" class="rounded img-fluid pointer">
         </div>
     </div>
 

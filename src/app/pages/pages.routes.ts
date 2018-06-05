@@ -24,6 +24,7 @@ import { AmigoseComponent } from './amigose/amigose.component';
 
 import { BusquedaComponent } from './busqueda/busqueda.component';
 import { VerificaTokenGuard } from '../services/guards/verifica-token.guard';
+import { Hospital3Component } from './hospital3/hospital3.component';
 
 
 
@@ -54,6 +55,7 @@ const pagesRoutes: Routes = [
     { path: 'medicos', component: MedicosComponent, data: { titulo: 'Gestión de Clientes' } },
     { path: 'medico/:id', component: MedicoComponent, data: { titulo: 'Actualizar Cliente' } },
     { path: 'hospital2/:id', component: Hospital2Component, data: { titulo: 'Actualizar Inmueble' } },
+    { path: 'hospital3/:id', component: Hospital3Component, data: { titulo: 'Ver Inmueble' } },
     { path: 'buscaramigos', component: AmigoseComponent, data: { titulo: 'Buscar Amigos' } },
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
 ];
