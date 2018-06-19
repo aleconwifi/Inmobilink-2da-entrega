@@ -29,18 +29,18 @@
             <div class="card-body">
                 <h4 class="card-title">Clientes</h4>
 
-                <table class="table table-hover" *ngIf="medicos.length > 0">
+                <table class="table table-hover" *ngIf="clientes.length > 0">
                     <tbody>
-                        <tr *ngFor="let medico of medicos" [routerLink]="['/medico', medico._id]" class="pointer">
+                        <tr *ngFor="let cliente of clientes" [routerLink]="['/cliente', cliente._id]" class="pointer">
                             <td>
-                                <img [src]="medico.img | imagen:'medico'" class="img-50 img-circle">
+                                <img [src]="cliente.img | imagen:'cliente'" class="img-50 img-circle">
                             </td>
-                            <td>{{ medico.nombre }}</td>
+                            <td>{{ cliente.nombre }}</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <div class="alert alert-info" *ngIf="medicos.length === 0">
+                <div class="alert alert-info" *ngIf="clientes.length === 0">
                     No hay registros
                 </div>
 
@@ -53,18 +53,18 @@
             <div class="card-body">
                 <h4 class="card-title">Inmuebles</h4>
 
-                <table class="table table-hover" *ngIf="hospitales.length > 0">
+                <table class="table table-hover" *ngIf="inmuebles.length > 0">
                     <tbody>
-                        <tr *ngFor="let hospital of hospitales" [routerLink]="['/hospitales']" class="pointer">
+                        <tr *ngFor="let inmueble of inmuebles" [routerLink]="['/inmuebles']" class="pointer">
                             <td>
-                                <img [src]="hospital.img | imagen:'hospital'" class="img-50 img-circle">
+                                <img [src]="inmueble.img | imagen:'inmueble'" class="img-50 img-circle">
                             </td>
-                            <td>{{ hospital.nombre }}</td>
+                            <td>{{ inmueble.nombre }}</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <div class="alert alert-info" *ngIf="hospitales.length === 0">
+                <div class="alert alert-info" *ngIf="inmuebles.length === 0">
                     No hay registros
                 </div>
 

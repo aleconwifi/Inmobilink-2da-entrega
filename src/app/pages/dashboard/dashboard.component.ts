@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Hospital } from '../../models/hospital.model';
-import { HospitalService } from '../../services/service.index';
+import { Inmueble } from '../../models/inmueble.model';
+import { InmuebleService } from '../../services/service.index';
 
 
 
@@ -11,17 +11,17 @@ import { HospitalService } from '../../services/service.index';
 })
 export class DashboardComponent implements OnInit {
 
-  hospitales: Hospital[] = [];
+  inmuebles: Inmueble[] = [];
 
-  constructor( public _hospitalService: HospitalService,) { }
+  constructor( public _inmuebleService: InmuebleService,) { }
 
   ngOnInit() {
-    this.cargarHospitales();
+    this.cargarInmuebles();
   }
 
-  cargarHospitales() {
-    this._hospitalService.cargarHospitales()
-            .subscribe( hospitales => this.hospitales = hospitales );
+  cargarInmuebles() {
+    this._inmuebleService.cargarInmuebles()
+            .subscribe( inmuebles => this.inmuebles = inmuebles );
   }
 
 }

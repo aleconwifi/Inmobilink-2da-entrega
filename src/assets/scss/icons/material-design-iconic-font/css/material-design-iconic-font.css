@@ -523,10 +523,10 @@
 .zmdi-home:before {
   content: '\f175';
 }
-.zmdi-hospital-alt:before {
+.zmdi-inmueble-alt:before {
   content: '\f176';
 }
-.zmdi-hospital:before {
+.zmdi-inmueble:before {
   content: '\f177';
 }
 .zmdi-hotel:before {
@@ -2854,10 +2854,10 @@
 .zmdi-home:before {
   content: '\f175';
 }
-.zmdi-hospital-alt:before {
+.zmdi-inmueble-alt:before {
   content: '\f176';
 }
-.zmdi-hospital:before {
+.zmdi-inmueble:before {
   content: '\f177';
 }
 .zmdi-hotel:before {
@@ -5104,7 +5104,7 @@
 .zmdi-local-grocery-store:before {
   content: '\f1cb';
 }
-.zmdi-local-hospital:before {
+.zmdi-local-inmueble:before {
   content: '\f177';
 }
 .zmdi-local-laundry-service:before {

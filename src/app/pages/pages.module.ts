@@ -28,13 +28,13 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
-import { HospitalesComponent } from './hospitales/hospitales.component';
-import { MedicosComponent } from './medicos/medicos.component';
-import { MedicoComponent } from './medicos/medico.component';
+import { InmueblesComponent } from './inmuebles/inmuebles.component';
+import { ClientesComponent } from './clientes/clientes.component';
+import { ClienteComponent } from './clientes/cliente.component';
 import { BusquedaComponent } from './busqueda/busqueda.component';
-import { Hospital2Component } from './hospital2/hospital2.component';
+import { Inmueble2Component } from './inmueble2/inmueble2.component';
 import { AmigoseComponent } from './amigose/amigose.component';
-import { Hospital3Component } from './hospital3/hospital3.component';
+import { Inmueble3Component } from './inmueble3/inmueble3.component';
 
 @NgModule({
     declarations: [
@@ -50,13 +50,13 @@ import { Hospital3Component } from './hospital3/hospital3.component';
         ProfileComponent,
         UsuariosComponent,
         // ModalUploadComponent,
-        HospitalesComponent,
-        MedicosComponent,
-        MedicoComponent,
+        InmueblesComponent,
+        ClientesComponent,
+        ClienteComponent,
         BusquedaComponent,
-        Hospital2Component,
+        Inmueble2Component,
         AmigoseComponent,
-        Hospital3Component
+        Inmueble3Component
     ],
     exports: [
         DashboardComponent,

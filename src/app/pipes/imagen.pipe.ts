@@ -24,16 +24,16 @@ export class ImagenPipe implements PipeTransform {
         url += '/usuarios/' + img;
       break;
 
-      case 'medico':
-        url += '/medicos/' + img;
+      case 'cliente':
+        url += '/clientes/' + img;
       break;
 
-      case 'hospital':
-         url += '/hospitales/' + img;
+      case 'inmueble':
+         url += '/inmuebles/' + img;
       break;
 
       default:
-        console.log('tipo de imagen no existe, usuario, medicos, hospitales');
+        console.log('tipo de imagen no existe, usuario, clientes, inmuebles');
         url += '/usurios/xxx';
     }
 

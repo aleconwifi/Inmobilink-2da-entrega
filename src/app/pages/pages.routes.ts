@@ -15,16 +15,16 @@ import { LoginGuardGuard } from '../services/service.index';
 import { AdminGuard } from '../services/service.index';
 
 import { UsuariosComponent } from './usuarios/usuarios.component';
-import { HospitalesComponent } from './hospitales/hospitales.component';
-import { MedicosComponent } from './medicos/medicos.component';
-import { MedicoComponent } from './medicos/medico.component';
-import { Hospital2Component } from './hospital2/hospital2.component';
+import { InmueblesComponent } from './inmuebles/inmuebles.component';
+import { ClientesComponent } from './clientes/clientes.component';
+import { ClienteComponent } from './clientes/cliente.component';
+import { Inmueble2Component } from './inmueble2/inmueble2.component';
 import { AmigoseComponent } from './amigose/amigose.component';
 
 
 import { BusquedaComponent } from './busqueda/busqueda.component';
 import { VerificaTokenGuard } from '../services/guards/verifica-token.guard';
-import { Hospital3Component } from './hospital3/hospital3.component';
+import { Inmueble3Component } from './inmueble3/inmueble3.component';
 
 
 
@@ -51,11 +51,11 @@ const pagesRoutes: Routes = [
         canActivate: [ AdminGuard ],
         data: { titulo: 'Mantenimiento de Usuarios' }
     },
-    { path: 'hospitales', component: HospitalesComponent, data: { titulo: 'Gestión de Inmuebles' } },
-    { path: 'medicos', component: MedicosComponent, data: { titulo: 'Gestión de Clientes' } },
-    { path: 'medico/:id', component: MedicoComponent, data: { titulo: 'Actualizar Cliente' } },
-    { path: 'hospital2/:id', component: Hospital2Component, data: { titulo: 'Actualizar Inmueble' } },
-    { path: 'hospital3/:id', component: Hospital3Component, data: { titulo: 'Ver Inmueble' } },
+    { path: 'inmuebles', component: InmueblesComponent, data: { titulo: 'Gestión de Inmuebles' } },
+    { path: 'clientes', component: ClientesComponent, data: { titulo: 'Gestión de Clientes' } },
+    { path: 'cliente/:id', component: ClienteComponent, data: { titulo: 'Actualizar Cliente' } },
+    { path: 'inmueble2/:id', component: Inmueble2Component, data: { titulo: 'Actualizar Inmueble' } },
+    { path: 'inmueble3/:id', component: Inmueble3Component, data: { titulo: 'Ver Inmueble' } },
     { path: 'buscaramigos', component: AmigoseComponent, data: { titulo: 'Buscar Amigos' } },
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
 ];

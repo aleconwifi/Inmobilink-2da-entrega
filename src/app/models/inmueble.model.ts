@@ -1,4 +1,4 @@
-export class Hospital {
+export class Inmueble {
 
     constructor (
         public nombre: string,

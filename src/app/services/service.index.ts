@@ -6,9 +6,9 @@ export { VerificaTokenGuard } from './guards/verifica-token.guard';
 
 
 
-export { MedicoService } from './medico/medico.service';
-export { HospitalService } from './hospital/hospital.service';
-export { HospitalitoService } from './hospital/hospitalito.service';
+export { ClienteService } from './cliente/cliente.service';
+export { InmuebleService } from './inmueble/inmueble.service';
+export { InmuebleitoService } from './inmueble/inmuebleito.service';
 
 
 export { SubirArchivoService } from './subir-archivo/subir-archivo.service';
