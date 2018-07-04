@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
+import { EnesperaComponent } from './enespera/enespera.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ModalUploadComponent } from '../components/modal-upload/modal-upload.co
         SidebarComponent,
         BreadcrumbsComponent,
         NopagefoundComponent,
-        ModalUploadComponent
+        ModalUploadComponent,
+        EnesperaComponent
     ],
     exports: [
         NopagefoundComponent,

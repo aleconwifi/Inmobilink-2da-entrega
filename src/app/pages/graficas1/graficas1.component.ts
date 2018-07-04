@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Cliente } from '../../models/cliente.model';
+import { ClienteService } from '../../services/service.index';
+
+import { Inmueble } from '../../models/inmueble.model';
+import { InmuebleService } from '../../services/service.index';
 
 @Component({
   selector: 'app-graficas1',
@@ -7,35 +12,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Graficas1Component implements OnInit {
 
+   porcent: number;
 
   graficos: any = {
     'grafico1': {
       'labels': ['Con Frijoles', 'Con Natilla', 'Con tocino'],
       'data':  [24, 30, 46],
       'type': 'doughnut',
-      'leyenda': 'El pan se come con'
+      'leyenda': 'Numero de Clientes'
     },
     'grafico2': {
-      'labels': ['Hombres', 'Mujeres'],
-      'data':  [4500, 6000],
+      'labels': ['Inmuebles', 'Clientes'],
+      'data':  [this._inmuebleService.totalInmuebles , this._clienteService.totalClientes],
       'type': 'doughnut',
-      'leyenda': 'Entrevistados'
+      'leyenda': 'Numero de Inmuebles vs Clientes'
     },
     'grafico3': {
       'labels': ['Si', 'No'],
       'data':  [95, 5],
       'type': 'doughnut',
-      'leyenda': '¿Le dan gases los frijoles?'
+      'leyenda': 'Cantidad de usuarios admin y user'
     },
     'grafico4': {
       'labels': ['No', 'Si'],
       'data':  [85, 15],
       'type': 'doughnut',
-      'leyenda': '¿Le importa que le den gases?'
+      'leyenda': 'Cantidad de seguidores'
     },
   };
 
-  constructor() { }
+  constructor(
+    public _clienteService: ClienteService,
+    public _inmuebleService: InmuebleService,
+  ) { }
 
   ngOnInit() {
   }

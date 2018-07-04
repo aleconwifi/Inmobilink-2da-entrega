@@ -25,6 +25,9 @@ import { AmigoseComponent } from './amigose/amigose.component';
 import { BusquedaComponent } from './busqueda/busqueda.component';
 import { VerificaTokenGuard } from '../services/guards/verifica-token.guard';
 import { Inmueble3Component } from './inmueble3/inmueble3.component';
+import { AmigosComponent } from './amigos/amigos.component';
+import { EsperaComponent } from './espera/espera.component';
+
 
 
 
@@ -57,6 +60,11 @@ const pagesRoutes: Routes = [
     { path: 'inmueble2/:id', component: Inmueble2Component, data: { titulo: 'Actualizar Inmueble' } },
     { path: 'inmueble3/:id', component: Inmueble3Component, data: { titulo: 'Ver Inmueble' } },
     { path: 'buscaramigos', component: AmigoseComponent, data: { titulo: 'Buscar Amigos' } },
+    { path: 'amigos', component: AmigosComponent, data: { titulo: 'Solicitud a Usuarios' } },
+    { path: 'gente/:page', component: EsperaComponent, data: { titulo: 'Solicitudes de amistad' } },
+    { path: 'gente', component: EsperaComponent, data: { titulo: 'Solicitudes de amistad' } },
+
+
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
 ];
 

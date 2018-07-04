@@ -35,6 +35,9 @@ import { BusquedaComponent } from './busqueda/busqueda.component';
 import { Inmueble2Component } from './inmueble2/inmueble2.component';
 import { AmigoseComponent } from './amigose/amigose.component';
 import { Inmueble3Component } from './inmueble3/inmueble3.component';
+import { SolicitudComponent } from './solicitud/solicitud.component';
+import { AmigosComponent } from './amigos/amigos.component';
+import { EsperaComponent } from './espera/espera.component';
 
 @NgModule({
     declarations: [
@@ -56,7 +59,10 @@ import { Inmueble3Component } from './inmueble3/inmueble3.component';
         BusquedaComponent,
         Inmueble2Component,
         AmigoseComponent,
-        Inmueble3Component
+        Inmueble3Component,
+        SolicitudComponent,
+        AmigosComponent,
+        EsperaComponent
     ],
     exports: [
         DashboardComponent,

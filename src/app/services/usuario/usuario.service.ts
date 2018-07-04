@@ -52,6 +52,24 @@ export class UsuarioService {
 
   }
 
+  getIdentity(){
+    this.usuario = JSON.parse( localStorage.getItem('usuario') );
+
+		return this.usuario;
+	}
+
+	getToken(){
+		let token = localStorage.getItem('token');
+
+		if(token != "undefined"){
+			this.token = token;
+		}else{
+			this.token = null;
+		}
+
+		return this.token;
+	}
+
 
   estaLogueado() {
     return ( this.token.length > 5 ) ? true : false;
@@ -193,6 +211,30 @@ export class UsuarioService {
     return this.http.get( url );
 
   }
+
+  
+    getUsers(page = null):Observable<any>{
+      let url = URL_SERVICIOS + '/usuarios/' + page;
+		url += '?token=' + this.token;
+  
+      return this.http.get(url);
+    }
+
+
+
+    getUser( id: string ) {
+
+      let url = URL_SERVICIOS + '/usuario/' + id;
+      url += '?token=' + this.token;
+
+  
+      return this.http.get( url )
+                .map( (resp: any) => resp.usuario );
+  
+    }
+    
+
+
 
   buscarUsuarios( termino: string ) {
 

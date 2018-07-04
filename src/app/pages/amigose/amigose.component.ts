@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../../models/usuario.model';
 import { UsuarioService } from '../../services/service.index';
-
+import {Router, ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-amigose',
@@ -26,9 +26,7 @@ export class AmigoseComponent implements OnInit {
     this.cargarUsuarios();
   }
 
-  activar(): void {
-  this.mostrarDatos = true;
-  }
+  
 
   cargarUsuarios() {
 

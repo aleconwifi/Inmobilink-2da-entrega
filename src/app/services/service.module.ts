@@ -12,9 +12,11 @@ import {
   LoginGuardGuard,
   AdminGuard,
   SubirArchivoService,
+  FollowService,
   InmuebleService,
   ClienteService,
   InmuebleitoService,
+  Usuario2Service,
   VerificaTokenGuard
  } from './service.index';
 
@@ -34,9 +36,11 @@ import {
     AdminGuard,
     SubirArchivoService,
     ModalUploadService,
+    FollowService,
     InmuebleService,
     ClienteService,
     InmuebleitoService,
+    Usuario2Service,
     VerificaTokenGuard
   ],
   declarations: []
